@@ -13,8 +13,20 @@ public class add {
 
     private static int addArguments(String[] args) {
       int sum = 0;
-      for (int i = 0; i <args.length; i++)
+      
+      if((args[0]) == "-"){
+       
+       for (int i = 1; i <args.length; i++)
+           sum = sum - Integer.valueOf(args[i]); 
+    } 
+  	  else{
+      	for (int i = 0; i <args.length; i++)
            sum = sum + Integer.valueOf(args[i]); 
+    } 
+     
       return sum;
     }
 }
+
+
+
