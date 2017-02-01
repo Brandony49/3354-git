@@ -29,7 +29,3 @@ public class add {
       return sum;
     }
 }
-
-
-
-
